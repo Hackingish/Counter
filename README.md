@@ -29,8 +29,6 @@ counter-app/
 │
 ├── public/
 ├── src/
-│   ├── components/
-│   │   └── Counter.jsx
 │   ├── App.jsx
 │   ├── main.jsx
 │   └── index.css
@@ -48,7 +46,7 @@ Follow these steps to run the project locally:
 ### 1️⃣ Clone the repository
 
 ```
-git clone https://github.com/your-username/counter-app.git
+git clone https://github.com/Hackingish/Counter.git
 ```
 
 ### 2️⃣ Navigate to project folder
@@ -76,28 +74,6 @@ npm run dev
 * The app uses the `useState` hook from React to manage the counter value.
 * Button clicks trigger functions that update the state.
 * React automatically re-renders the UI when the state changes.
-
-### Example Logic:
-
-```jsx
-import { useState } from "react";
-
-function Counter() {
-  const [count, setCount] = useState(0);
-
-  return (
-    <div>
-      <h1>{count}</h1>
-
-      <button onClick={() => setCount(count + 1)}>+</button>
-      <button onClick={() => setCount(count - 1)}>-</button>
-      <button onClick={() => setCount(0)}>Reset</button>
-    </div>
-  );
-}
-
-export default Counter;
-```
 
 ---
 
